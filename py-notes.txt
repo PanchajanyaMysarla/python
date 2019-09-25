@@ -1,0 +1,35 @@
+Create and activate the virtual environment
+
+Got to protect folder and run the below
+
+
+For windows
+
+py -3 -m venv env
+env\scripts\activate
+For macOS/Linux
+
+python3 -m venv example-env
+source example-env/bin/activate
+
+
+Install the packages
+
+# Don't use with Anaconda distributions because they include matplotlib already.
+
+# macOS
+python3 -m pip install matplotlib
+
+# Windows (may require elevation)
+python -m pip install matplotlib
+
+# Linux (Debian)
+apt-get install python3-tk
+python3 -m pip install matplotlib
+
+
+https://docs.python.org/3/tutorial/venv.html
+
+
+Once you are finished, type deactivate in the terminal window to deactivate the virtual environment.aq6789
+aw43wa 
