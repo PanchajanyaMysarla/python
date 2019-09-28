@@ -14,7 +14,7 @@ grid = [
         [7,8,9]
         ]
     
-
+print(list(zip(*grid)))
 for i in range(len(grid)):
     for j in range(len(grid[i])):
         
@@ -23,4 +23,7 @@ for i in range(len(grid)):
             grid[i][j] = grid[j][i]
             grid[j][i] = temp
           
-print(*grid, sep='\n')
+#print(*grid, sep='\n')
+
+
+
