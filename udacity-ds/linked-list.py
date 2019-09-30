@@ -8,6 +8,8 @@ particular value.
 Then, use "Test Run" and "Submit" to run the test cases
 at the bottom."""
 
+# testing
+
 
 class Element(object):
     def __init__(self, value):
@@ -71,8 +73,6 @@ class LinkedList(object):
                 previous.next = current.next
             else:
                 self.head = current.next
-
-     
 
         pass
 
