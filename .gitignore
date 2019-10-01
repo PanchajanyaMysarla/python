@@ -123,3 +123,4 @@ dmypy.json
 .pyre/
 
 /udacity-ds/ud-env
+/udacity-ds/ud-ds-env
