@@ -1,0 +1,17 @@
+binary tree ->  node with at most 2 childs
+
+struct Node{
+    int data,
+    Node* left,
+    Node* right
+}
+
+
+Strict/proper binary tree -> node with 0 or 2 childs
+
+complete BT -> all levels expect last are completely filles and all node as as left as possible
+    max no of nodes at lvel i -> 2 power i
+
+Perfect bT 
+    ->  max no of nodes in a bt wiht height h = 2 power h+1  -1
+    -> height of perfect bt with n nodes log2 n+1 -1
