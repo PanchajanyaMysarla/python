@@ -1,0 +1,13 @@
+"""
+5 easy steps to DP:
+-> define subproblems   -- # no of subproblems
+-> guess(part of solution) -- # choices for guess
+-> relate subproblem solns -- time per subproblem 
+-> recurse & memoize
+ or build bottom-up DP table
+-> solve the original problem
+ 
+
+
+
+"""
