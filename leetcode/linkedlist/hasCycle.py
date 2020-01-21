@@ -42,4 +42,18 @@ class Solution:
             fast =  fast.next.next
         return True
         
+        
+    def hasCycleFinal(self, head: ListNode) -> bool:
+        if head == None or head.next == None:
+            return False
+        slow = fast = head
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+            if slow == fast:
+                print(slow.val)
+                
+                return True
+        return False
+            
     

@@ -15,4 +15,7 @@ def check_palindrome(s):
 
 #print(check_palindrome(deque(b.replace(' ','').lower())))
 
+print(deque(''.join(b.split())))
+print(list(a))
+
 print(check_palindrome(deque(''.join(b.split()).lower())))

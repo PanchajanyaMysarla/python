@@ -23,9 +23,6 @@ python3 -m pip install matplotlib
 # Windows (may require elevation)
 python -m pip install matplotlib
 
-# Linux (Debian)
-apt-get install python3-tk
-python3 -m pip install matplotlib
 
 
 https://docs.python.org/3/tutorial/venv.html

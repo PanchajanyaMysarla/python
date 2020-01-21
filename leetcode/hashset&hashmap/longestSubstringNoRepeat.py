@@ -23,6 +23,48 @@ Explanation: The answer is "wke", with the length of 3.
 import collections
 
 a ="abcabcbb"
+
+
+# youtube solution
+def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        mac = 0
+        for start in range(len(s)):
+            mac = max(mac,self.helper(s,start))
+        
+        return mac
+    
+def helper(self,s,start):
+        seen = set()
+        for i in range(start,len(s)):
+            if s[i] not in seen:
+                seen.add(s[i])
+            else:
+                return i - start
+        return len(s) - start
+        
+  def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        start = 0
+        mac = 0
+        seen = {}
+        
+        for end in range(len(s)):
+            if s[end] in seen:
+                start = max(start,seen[s[end]] + 1)
+            seen[s[end]] = end
+            mac = max(mac, end -start +1)
+        return mac
+            
+    """
+""""
+    
 def lengthOfLongestSubstring(s: str):
     sett = set(s)
     maxSize = 0

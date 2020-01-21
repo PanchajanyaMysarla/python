@@ -16,6 +16,7 @@ def removeDupsInPlace(nums):
         if nums[i-1]!=nums[i]:
             nums[c]=nums[i]
             c+=1
+    print(nums)
     return c
             
 

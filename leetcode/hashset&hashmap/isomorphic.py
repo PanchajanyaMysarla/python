@@ -29,6 +29,11 @@ t1 = "title"
 s2 = "ab"
 t2 = "aa"
 
+
+"""
+
+ return len(set(zip(s, t))) == len(set(s)) == len(set(t))
+ """
 def isIsomorphic(s, t):
     
     i = [ s.index(i) for i in s]
