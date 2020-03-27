@@ -25,5 +25,7 @@ def isHappyFloyd(n):
     while fast != 1 and slow != fast:
         slow = getNext(slow)
         fast = getNext(getNext(fast))
+        
     return fast == 1
-print(isHappyFloyd(19))
+#print(isHappyFloyd(19))
+

@@ -33,7 +33,8 @@ class TicTacToe():
     def game_over(self):
         win = False;
         for strategy in self.win_strategy:
-            if ' ' not in [self.theBoard[strategy[0]],self.theBoard[strategy[1]],self.theBoard[strategy[2]]] and self.theBoard[strategy[0]] == self.theBoard[strategy[1]] == self.theBoard[strategy[2]]:
+            if ' ' not in [self.theBoard[strategy[0]],self.theBoard[strategy[1]],self.theBoard[strategy[2]]]
+            and self.theBoard[strategy[0]] == self.theBoard[strategy[1]] == self.theBoard[strategy[2]]:
                 win = True
                 break
         return win    

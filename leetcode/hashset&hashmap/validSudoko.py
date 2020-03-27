@@ -148,7 +148,7 @@ def isValidSudoku2(board):
                     return False
                 else:
                     sub[val] = sub.get(val,[]) + [3*(i//3)+j//3]
-                print(i,j,val,row,col,sub)
+                #print(i,j,val,row,col,sub)
     return True
        
-print(isValidSudoku(board))
+print(isValidSudoku2(board))
